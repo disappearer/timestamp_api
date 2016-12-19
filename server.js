@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var dateformat = require('dateformat')
 
-app.get('/:time', function (req, res) {
+app.get('/:time?', function (req, res) {
     
   var dateString = req.params.time;
   var unixtime = parseInt(dateString)
